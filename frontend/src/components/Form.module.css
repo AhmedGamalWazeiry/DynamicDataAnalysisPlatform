@@ -1,0 +1,128 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  transition: 1s;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.browse__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 15px;
+  border: 1.5px dashed #483ea8;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(194, 194, 194, 0.2),
+    0 6px 20px 0 rgba(114, 114, 114, 0.19);
+  background-color: white;
+}
+
+.browse__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 20px 5px 20px;
+
+  background-color: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  transition: 0.5s;
+}
+.icon:hover {
+  scale: 1.2;
+}
+.browse__desc {
+  margin-top: 10px;
+  color: rgb(13, 3, 81);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.supported__format {
+  color: #676767;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.selected__file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  box-sizing: border-box;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  width: 70%;
+  background-color: #ede9fd;
+  box-shadow: 0 4px 8px 0 rgba(194, 194, 194, 0.2),
+    0 6px 20px 0 rgba(114, 114, 114, 0.19);
+}
+.delete__selected__file {
+  background-color: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.delete__selected__file:hover {
+  scale: 1.3;
+}
+.upload__file {
+  background: #483ea8;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border-radius: 8px;
+  width: 95%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px #483ea8;
+  transition: 0.3s;
+}
+.upload__file:hover {
+  background: #18124e;
+}
+.upload__file__disable {
+  background: #d9d9d9;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(39, 39, 39);
+  border-radius: 8px;
+  width: 95%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px #8c8b93;
+  transition: 0.3s;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    justify-content: flex-end;
+
+    height: 100%;
+    width: 80%;
+  }
+}

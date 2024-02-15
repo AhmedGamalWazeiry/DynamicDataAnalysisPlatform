@@ -1,0 +1,73 @@
+.cancel__button,
+.delete__button {
+  display: flex;
+  width: 190px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--Red, #ff4545);
+  color: var(--secondary-white, #fff);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.delete__button:hover {
+  transition: 0.5s;
+  color: #fff;
+  background: var(--Red, #fca2a2);
+}
+.cancel__button {
+  background: #fff;
+  height: 40px;
+  border: 1px solid var(--greyscale-ucla-blue, #5a6487);
+  color: var(--greyscale-ucla-blue, #5a6487);
+  margin-right: 16px;
+}
+.cancel__button:hover {
+  background-color: #eff0f5;
+  color: var(--greyscale__ucla__blue, #00234b);
+  border: 1px solid var(--greyscale__ucla__blue, #eff0f5);
+}
+.delete__title {
+  color: var(--2-f-2-f-7-f, #2f2f7f);
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.delete__description {
+  color: var(--5-e-5-e-5-e, #5e5e5e);
+  text-align: center;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.delete__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.delete__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8px;
+}
+.hr__line {
+  width: 100%;
+}
