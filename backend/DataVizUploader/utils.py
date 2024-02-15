@@ -1,8 +1,7 @@
-import calendar
 import pandas as pd
 from .models import FinancialDataSet
 from django.db import transaction
-from sklearn.linear_model import LinearRegression
+
 import numpy as np
 
 
@@ -34,10 +33,7 @@ def process_csv_file(file):
     df = df.fillna(0)
 
     # Generate the slope and the intercept for linear regression
-    
-    reg = LinearRegression().fit(df[[x_var]], df[y_var])
-    slope = reg.coef_[0]
-    intercept = reg.intercept_
+    slope, intercept = np.polyfit(df[x_var],  df[y_var], 1)
 
     # Generate new DataFrame with data of the line
     df = generate_new_dataframe(df, x_var, slope, intercept)
