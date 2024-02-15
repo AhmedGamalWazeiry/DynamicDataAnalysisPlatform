@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DynamicDataAnalysisPlatform/static/css/main.f83b1a4f.css",
+    "main.js": "/DynamicDataAnalysisPlatform/static/js/main.6097b946.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/DynamicDataAnalysisPlatform/static/js/787.9e9f4ffd.chunk.js",
+    "index.html": "/DynamicDataAnalysisPlatform/index.html",
+    "main.f83b1a4f.css.map": "/DynamicDataAnalysisPlatform/static/css/main.f83b1a4f.css.map",
+    "main.6097b946.js.map": "/DynamicDataAnalysisPlatform/static/js/main.6097b946.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/DynamicDataAnalysisPlatform/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f83b1a4f.css",
+    "static/js/main.6097b946.js"
+  ]
+}
